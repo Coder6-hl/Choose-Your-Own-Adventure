@@ -1,40 +1,39 @@
-# scene_4.py
-
 def play_scene():
     """
-    Scene 4 Template (Often a 'final' or 'climax' scene):
-    - Section A (Choice 1)
-    - Section B (Choice 2)
-    - Returns "quit" if the story ends, or maybe loops back to an earlier scene.
+    Scene 4: Final Confrontation
+    A choice-driven narrative where the player determines the outcome of their journey.
     """
 
     print("\n=== SCENE 4 ===")
-    print("Section A: [Set the stage for a final confrontation or resolution]")
-    
-    choice_a = input("You can 'confront' the challenge or 'turn back': ").lower().strip()
+    print("You stand at the crossroads of destiny. Ahead lies the challenge; behind you, the path of retreat.")
+
+    # Section A: The First Choice
+    choice_a = input("Do you 'confront' the challenge or 'turn back'? ").lower().strip()
 
     if choice_a == "confront":
-        print("You gather your courage and face the threat head-on...")
-        # Placeholder logic
+        print("Summoning your courage, you stride forward to face the looming threat...")
     elif choice_a == "turn back":
-        print("You hesitate and consider escaping before it's too late...")
-        # Placeholder logic
+        print("You hesitate, considering the comfort of retreat, but doubt gnaws at your soul...")
     else:
-        print("You freeze in fear, but time forces you to confront anyway.")
+        print("Frozen by indecision, time forces your hand. The challenge lies before you.")
 
-    print("\n--- Moving to Section B of Scene 4 ---")
-    print("Section B: [Provide the final decision or resolution]")
-    
+    print("\n--- Transitioning to the Final Decision ---")
+    print("The moment has come to determine your fate. How will you proceed?")
+
+    # Section B: The Final Decision
     choice_b = input("Do you 'fight' or 'negotiate'? ").lower().strip()
 
     if choice_b == "fight":
-        print("You engage in a fierce battle. Eventually, you emerge victorious—or not...")
-        print("This might be the end of your journey!")
+        print("A fierce battle ensues. You pour your strength into the conflict, emerging with scars and lessons.")
+        print("Your journey ends here, leaving a mark on the world.")
         return "quit"
     elif choice_b == "negotiate":
-        print("You attempt to reason, forging a new path. The outcome is uncertain, but the journey ends here.")
+        print("You seek a path of reason, extending an olive branch. The outcome is uncertain but hopeful.")
+        print("Your story concludes with a new beginning.")
         return "quit"
     else:
-        print("No action taken. Fate decides for you. The adventure concludes.")
+        print("Your inaction leaves fate to decide. The adventure reaches its end, quietly and unexpectedly.")
         return "quit"
 
+# To play the scene, simply call the function:
+# play_scene()
